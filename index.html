@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TravelService</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="logo">MS TURISAM</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#upload">Upload Docs</a>
+      <a href="#features">Features</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Explore the world with ease!</h1>
+    <p>Your trusted travel documentation partner. Upload your passport, photo, Aadhaar, or any travel-related document securely.</p>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>TravelService helps you get ready for your journey by handling document uploads like passport, Aadhaar, visa, or travel insurance. We ensure your data is safe and securely stored.</p>
+  </section>
+
+  <section id="upload" class="form-section">
+    <h2>Upload Your Travel Documents</h2>
+    <form id="docForm">
+      <label for="passport">Passport (PDF, PNG, JPG, JPEG):</label>
+      <input type="file" id="passport" name="passport" accept=".pdf,.png,.jpg,.jpeg" required />
+  
+      <label for="aadhaar">Aadhaar Card:</label>
+      <input type="file" id="aadhaar" name="aadhaar" accept=".pdf,.png,.jpg,.jpeg" required />
+  
+      <label for="visa">Visa (if available):</label>
+      <input type="file" id="visa" name="visa" accept=".pdf,.png,.jpg,.jpeg" />
+  
+      <label for="photo">Photograph (Passport size):</label>
+      <input type="file" id="photo" name="photo" accept=".png,.jpg,.jpeg" required />
+  
+      <label for="insurance">Travel Insurance (if any):</label>
+      <input type="file" id="insurance" name="insurance" accept=".pdf,.png,.jpg,.jpeg" />
+  
+      <label for="other">Other Documents:</label>
+      <input type="file" id="other" name="other" accept=".pdf,.png,.jpg,.jpeg,.doc,.docx" multiple />
+  
+      <button type="submit">Submit Documents</button>
+    </form>
+    <p id="uploadStatus"></p>
+  </section>
+  
+
+  <section id="features" class="features">
+    <h2>Why Choose Us?</h2>
+    <ul>
+      <li>✅ Upload multiple file types</li>
+      <li>✅ Clean, simple interface</li>
+      <li>✅ Trusted by thousands</li>
+      <li>✅ Instant status updates</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-info">
+      <p><strong>📞 Phone:</strong> +91-9876543210</p>
+      <p><strong>✉️ Email:</strong> support@travelservice.com</p>
+    </div>
+    <button onclick="contactUs()">Send Email</button>
+  </section>
+  
+
+  <footer>
+    <p>&copy; 2025 TravelService. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
